@@ -11,8 +11,9 @@ namespace PDFService.Service
     // NOTE: In order to launch WCF Test Client for testing this service, please select PdfService.svc or PdfService.svc.cs at the Solution Explorer and start debugging.
     public class PdfService : IPdfService
     {
-        public void DoWork()
+        public void Import()
         {
+            throw new NotImplementedException();
         }
     }
 }
