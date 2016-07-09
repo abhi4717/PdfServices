@@ -1,4 +1,5 @@
-﻿using el = Microsoft.Practices.EnterpriseLibrary.Logging;
+﻿using Microsoft.Practices.EnterpriseLibrary.Common.Configuration;
+using el = Microsoft.Practices.EnterpriseLibrary.Logging;
 namespace PDFService.Helper
 {
     /// <summary>
@@ -12,10 +13,17 @@ namespace PDFService.Helper
         /// <param name="message">messages to be logged</param>
         public static void LogMessage(string message)
         {
-            el.Logger.SetLogWriter(new el.LogWriterFactory().Create());
-            var log = new el.LogEntry();
-            log.Message = message;
-            el.Logger.Write(log);
+            IConfigurationSource configurationSource = ConfigurationSourceFactory.Create();
+            el.LogWriterFactory logWriterFactory = new el.LogWriterFactory(configurationSource);
+            el.Logger.SetLogWriter(logWriterFactory.Create());
+            el.LogEntry entry = new el.LogEntry();
+            entry.Message = message ;
+            el.Logger.Write(entry);
+
+            //el.Logger.SetLogWriter(new el.LogWriterFactory().Create());
+            //var log = new el.LogEntry();
+            //log.Message = message;
+            //el.Logger.Write(log);
         }
     }
 }

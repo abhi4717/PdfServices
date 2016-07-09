@@ -19,9 +19,7 @@ namespace PDF.UnitTests.PDFService.Helper
         {
             Logger.LogMessage("Test message recorded");
 
-            var stream = new StreamReader("trace-xml.log");
-            var content = stream.ReadToEnd();
-            Assert.IsFalse(string.IsNullOrWhiteSpace(content));
+            Assert.IsTrue(File.Exists("rolling.log"));
         }
     }
 }
