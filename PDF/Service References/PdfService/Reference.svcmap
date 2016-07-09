@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b99036a3-3ab9-412f-97d8-5bee313cfdcd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:54698/Service/PdfService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PdfService.xsd" MetadataType="Schema" ID="b9ef28b2-e9bb-421e-af1f-6d54ccca86bc" SourceId="1" SourceUrl="http://localhost:54698/Service/PdfService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PdfService.wsdl" MetadataType="Wsdl" ID="10fdb165-da0a-4024-836d-e6cc39b60d81" SourceId="1" SourceUrl="http://localhost:54698/Service/PdfService.svc?wsdl" />
+    <MetadataFile FileName="PdfService.disco" MetadataType="Disco" ID="56218d4c-5501-4c6a-852b-9a8e9bb84524" SourceId="1" SourceUrl="http://localhost:54698/Service/PdfService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
